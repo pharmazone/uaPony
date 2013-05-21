@@ -66,7 +66,7 @@ def send_notification user_id, barcode, message
     :body => body, 
   )
   
-  print barcode + " " + user_email + "\n"
+  print Time.now.strftime("%Y-%m-%d %H:%M:%S") + ': ' +barcode + " => " + user_email + "\n"
 end
 
 class String
